@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body { 
+  @apply bg-colors-gray-600 text-colors-gray-100; 
+  -webkit-font-smoothing: antialised; 
+
+  @apply text-fontFamily-sans;
+}

@@ -1,11 +1,13 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    './src/**/*.tsx'  
+  ],
   theme: {
     extend: {
+      h: {
+       50: '12.5rem', 
+      },
       colors: {
-        backgroundImage: { 
-          blur: 'url(/src/assets/blur_background.png)'
-        },
         fontFamily: { 
           sans: 'Roboto, sans-serif'
         },
