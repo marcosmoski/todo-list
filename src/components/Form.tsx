@@ -1,14 +1,15 @@
 import { PlusCircle } from 'phosphor-react'
 import { useState } from 'react';
 
-export function Form() { 
+export function Form(props: any) { 
   const [newTask, setNewTaskChange] = useState('');
 
-  function handleNewTaskAdd (event: React.ChangeEvent<HTMLFormElement>) { 
+  function handleNewTaskAdd (event: any) { 
     event.preventDefault()
+    props.onHandleAddTask(newTask)
   }
  
-  function handleNewTaskChange(event: React.ChangeEvent<HTMLInputElement>) { 
+  function handleNewTaskChange(event: any) { 
     setNewTaskChange(event.target.value)
   }
 
